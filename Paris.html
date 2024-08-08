@@ -1,134 +1,135 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paris</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            padding: 20px;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-bottom: 30px;
-        }
-        th, td {
-            padding: 10px;
-            text-align: left;
-            border-bottom: 1px solid #ddd;
-        }
-        th {
-            background-color: #92d7ff;
-        }
-    </style>
-</head>
-<body>
-    <style>
-        #TopBox {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 30vh; /* Ajusta a altura */
-        }
-        #tamanho {
-            max-width: 20%; /* Ajusta a largura da imagem */
-            height: auto;   /* Mantém a proporção da imagem */
-            border-radius: 8px; /*  bordas arredondadas  */
-        }
-    </style>
-</head>
-<body>
-    <div id="TopBox">
-        <img id="tamanho" src="https://i.pinimg.com/564x/fb/58/7e/fb587efdaf18fdef450897f03668ad51.jpg" alt="Imagem">
-    </div>
-
-    <h1>Medalhas</h1>
-    
-    <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Medalhas Olimpíadas de Paris 2024</title>
+    <title>Tabela de Medalhas</title>
     <style>
-        table {
-            width: 60%;
-            margin: 20px auto;
-            border-collapse: collapse;
+        body {
             font-family: Arial, sans-serif;
+            background-color: rgb(161, 214, 245);
+        }
+
+
+        .container {
             text-align: center;
+            margin-top: 20px;
         }
-        th, td {
+
+
+        .medal-table {
+            width: 50%; /* largura  */
+            margin: 40px auto; /*  margem superior mover para baixo */
+            border-collapse: collapse;
+            background-color: white; /* Define o fundo da tabela como branco */
+        }
+
+
+        .medal-table th, .medal-table td {
             border: 1px solid #ddd;
-            padding: 10px;
+            padding: 8px;
+            text-align: left;
         }
-        th {
-            background-color: #f4f4f4;
-            color: #333;
+
+
+        .medal-table th {
+            background-color: #f2f2f2;
+            color: black;
+            font-weight: bold;
         }
-        tr:nth-child(even) {
+
+
+        .medal-table tr:nth-child(even) {
             background-color: #f9f9f9;
         }
-        tr:hover {
-            background-color: #f1f1f1;
+
+
+        .medal-table tr:hover {
+            background-color: #ddd;
         }
-        .gold {
-            background-color: gold;
-            font-weight: bold;
+
+
+        .medal-table .flag, .medal-table .medal-icon {
+            width: 20px;
+            height: auto;
+            margin-right: 5px;
+            vertical-align: middle;
         }
-        .silver {
-            background-color: silver;
-            font-weight: bold;
+
+
+        .medal-table th:nth-child(3),
+        .medal-table th:nth-child(4),
+        .medal-table th:nth-child(5),
+        .medal-table th:nth-child(6) {
+            text-align: center;
         }
-        .bronze {
-            background-color: #cd7f32;
-            font-weight: bold;
-            color: white;
+
+
+        .medal-table td:nth-child(3),
+        .medal-table td:nth-child(4),
+        .medal-table td:nth-child(5),
+        .medal-table td:nth-child(6) {
+            text-align: center;
         }
-        .brazil {
+
+
+        .medal-table td strong {
             font-weight: bold;
-            color: rgb(79, 152, 212);
         }
     </style>
 </head>
 <body>
-    <table>
+    <div class="container">
+        <img src="https://gstatic.olympics.com/s1/f_auto/static/srm/paris-2024/topic-assets/paris-2024/emblem-oly.svg" alt="Imagem de Exemplo">
+    </div>
+    <table class="medal-table">
         <thead>
             <tr>
-                <th>Posição</th>
-                <th>Medalha</th>
-                <th>País</th>
+                <th>Ordem</th>
+                <th>CONs</th>
+                <th><img src="https://img.icons8.com/emoji/48/000000/1st-place-medal-emoji.png" alt="Ouro" class="medal-icon"> O</th>
+                <th><img src="https://img.icons8.com/emoji/48/000000/2nd-place-medal-emoji.png" alt="Prata" class="medal-icon"> P</th>
+                <th><img src="https://img.icons8.com/emoji/48/000000/3rd-place-medal-emoji.png" alt="Bronze" class="medal-icon"> B</th>
+                <th>Total</th>
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td>1º</td>
-                <td class="gold">Ouro</td>
-                <img src="https://img.icons8.com/?size=100&id=33852&format=png&color=000000" alt="">
-                <td>Estados Unidos</td>
-                
+                <td><img src="https://flagcdn.com/us.svg" alt="Estados Unidos da América" class="flag"> Estados Unidos da América</td>
+                <td>27</td>
+                <td>35</td>
+                <td>33</td>
+                <td><strong>95</strong></td>
             </tr>
             <tr>
                 <td>2º</td>
-                <td class="silver">Prata</td>
-                <img src="https://img.icons8.com/?size=100&id=23873&format=png&color=000000" alt="">
-                <td>China</td>
+                <td><img src="https://flagcdn.com/cn.svg" alt="República Popular da China" class="flag"> República Popular da China</td>
+                <td>26</td>
+                <td>24</td>
+                <td>17</td>
+                <td><strong>67</strong></td>
             </tr>
             <tr>
                 <td>3º</td>
-                <td class="bronze">Bronze</td>
-                <img src="https://img.icons8.com/?size=100&id=23875&format=png&color=000000" alt="">
-                <td>França</td>
+                <td><img src="https://flagcdn.com/au.svg" alt="Austrália" class="flag"> Austrália</td>
+                <td>18</td>
+                <td>14</td>
+                <td>11</td>
+                <td><strong>43</strong></td>
             </tr>
-            <tr class="brazil">
-                <td>17º</td>
-                <td>Participação</td>
-                <img src="https://img.icons8.com/?size=100&id=1136&format=png&color=000000" alt="">
-                <td>Brasil</td>
+            <tr>
+                <td>18º</td>
+                <td><img src="https://flagcdn.com/br.svg" alt="Brasil" class="flag"> Brasil</td>
+                <td>2</td>
+                <td>5</td>
+                <td>7</td>
+                <td><strong>14</strong></td>
             </tr>
         </tbody>
     </table>
 </body>
 </html>
+
+
+
