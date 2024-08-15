@@ -7,7 +7,9 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: rgb(161, 214, 245);
+            background-color: rgb(141, 200, 240);
+            margin: 0;
+            padding: 0;
         }
 
 
@@ -16,12 +18,11 @@
             margin-top: 20px;
         }
 
-
         .medal-table {
-            width: 50%; /* largura  */
-            margin: 40px auto; /*  margem superior mover para baixo */
+            width: 45%;
+            margin: 40px auto;
             border-collapse: collapse;
-            background-color: white; /* Define o fundo da tabela como branco */
+            background-color: white;
         }
 
 
@@ -76,12 +77,72 @@
         .medal-table td strong {
             font-weight: bold;
         }
+
+
+        .news-section {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px auto;
+            width: 70%;
+        }
+
+
+        .news-item {
+            flex: 1;
+            margin: 0 10px;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 10px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            max-width: 45%;
+            position: relative; /* Para o link "Ver mais" ser posicionado dentro do item */
+        }
+
+
+        .news-item img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+
+        .news-item h3 {
+            margin-top: 0;
+            font-size: 16px;
+        }
+
+
+        .news-item p {
+            font-size: 12px;
+        }
+
+
+        .news-item .more-button {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background-color: #63adfc;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 5px 10px;
+            cursor: pointer;
+            text-decoration: none; /* Remove o sublinhado padrão */
+            font-size: 14px;
+        }
+
+
+        .news-item .more-button:hover {
+            background-color: #4a9bda; /* Altera a cor no hover */
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <img src="https://gstatic.olympics.com/s1/f_auto/static/srm/paris-2024/topic-assets/paris-2024/emblem-oly.svg" alt="Imagem de Exemplo">
+        <img src="https://gstatic.olympics.com/s1/f_auto/static/srm/paris-2024/topic-assets/paris-2024/emblem-oly.svg" alt="Emblema dos Jogos Olímpicos">
     </div>
+
+
     <table class="medal-table">
         <thead>
             <tr>
@@ -96,40 +157,67 @@
         <tbody>
             <tr>
                 <td>1º</td>
-                <td><img src="https://flagcdn.com/us.svg" alt="Estados Unidos da América" class="flag"> Estados Unidos da América</td>
-                <td>27</td>
-                <td>35</td>
-                <td>33</td>
-                <td><strong>95</strong></td>
+                <td><img src="https://gstatic.olympics.com/s1/f_auto/static/light/flag/paris-2024/olympic/3x2/USA.png" alt="Estados Unidos da América" class="flag"> Estados Unidos da América</td>
+                <td>40</td>
+                <td>44</td>
+                <td>42</td>
+                <td><strong>126</strong></td>
             </tr>
             <tr>
                 <td>2º</td>
-                <td><img src="https://flagcdn.com/cn.svg" alt="República Popular da China" class="flag"> República Popular da China</td>
-                <td>26</td>
+                <td><img src="https://gstatic.olympics.com/s1/f_auto/static/light/flag/paris-2024/olympic/3x2/CHN.png" alt="República Popular da China" class="flag"> República Popular da China</td>
+                <td>40</td>
+                <td>27</td>
                 <td>24</td>
-                <td>17</td>
-                <td><strong>67</strong></td>
+                <td><strong>91</strong></td>
             </tr>
             <tr>
                 <td>3º</td>
-                <td><img src="https://flagcdn.com/au.svg" alt="Austrália" class="flag"> Austrália</td>
-                <td>18</td>
-                <td>14</td>
-                <td>11</td>
-                <td><strong>43</strong></td>
+                <td><img src="https://gstatic.olympics.com/s1/f_auto/static/light/flag/paris-2024/olympic/3x2/JPN.png" alt="Japão" class="flag"> Japão</td>
+                <td>20</td>
+                <td>12</td>
+                <td>13</td>
+                <td><strong>45</strong></td>
             </tr>
             <tr>
-                <td>18º</td>
-                <td><img src="https://flagcdn.com/br.svg" alt="Brasil" class="flag"> Brasil</td>
-                <td>2</td>
-                <td>5</td>
+                <td>20º</td>
+                <td><img src="https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/BRA.png" alt="Brasil" class="flag"> Brasil</td>
+                <td>3</td>
                 <td>7</td>
-                <td><strong>14</strong></td>
+                <td>10</td>
+                <td><strong>20</strong></td>
             </tr>
         </tbody>
     </table>
+
+
+    <div class="news-section">
+        <div class="news-item">
+            <img src="https://img.olympics.com/images/image/private/t_16-9_295-196/f_auto/primary/uawtjw2xicdy9fe478rw" alt="Notícia 1">
+            <h3>Brasil é ouro no Vôlei de Praia, prata na Canoagem e bronze no Atletismo; veja o melhor do dia 14</h3>
+            <p>Em dia de três medalhas conquistadas, delegação brasileira comemora ouro de Duda e Ana Patricia, prata de Isaquias Queiroz e bronze de Alison dos Santos, além de cenas marcantes na Ginástica Rítmica e no Salto Triplo.</p>
+            <a href="https://example.com/noticia1" class="more-button">Ver mais</a>
+        </div>
+        <div class="news-item">
+            <img src="https://img.olympics.com/images/image/private/t_16-9_295-196/f_auto/primary/ftvnomooppbzydzappqk" alt="Notícia 2">
+            <h3>Barbara Domingos termina na décima colocação na Ginástica Rítmica; veja sua melhor apresentação</h3>
+            <p>Brasileira conseguiu 123.100 no somatória das quatro rotinas e terminou na última colocação da final do individual geral da Ginástica Rítmica dos Jogos Olímpicos Paris 2024. Veja como foi a apresentação dela na Bola.</p>
+            <a href="https://example.com/noticia2" class="more-button">Ver mais</a>
+        </div>
+        <div class="news-item">
+            <img src="https://img.olympics.com/images/image/private/t_16-9_295-196/f_auto/primary/j1kw2zfg478zlftfw2eg" alt="Notícia 3">
+            <h3>Bronze no Skate Park é o destaque do dia olímpico do Brasil; veja o melhor do país no Dia 12</h3>
+            <p>O bronze de Augusto Akio no Skate Park masculino foi o grande destaque do dia 12 de disputas dos brasileiros nos Jogos Olímpicos Paris 2024. Veja o melhor do Brasil nesta quarta-feira</p>
+            <a href="https://example.com/noticia3" class="more-button">Ver mais</a>
+        </div>
+        <div class="news-item">
+            <img src="https://img.olympics.com/images/image/private/t_16-9_295-196/f_auto/primary/z5a9wg2bvlfsozpmaii9" alt="Notícia 4">
+            <h3>Surfe nos Jogos Olímpicos Paris 2024: relembre as medalhas de Gabriel Medina e Tatiana Weston-Webb</h3>
+            <p>Brasil conquistou duas medalhas no Surfe olímpico. No masculino, Gabriel Medina levou o bronze, enquanto Tatia Weston-Webb ficou com a prata no feminino. Relembre as conquistas.</p>
+            <a href="https://example.com/noticia4" class="more-button">Ver mais</a>
+        </div>
+    </div>
 </body>
 </html>
-
 
 
